@@ -1,0 +1,27 @@
+{
+  "context-menu": {
+    "atom-text-editor": [{
+      "label": "Toggle JSMidi",
+      "command": "jsmidi:toggle"
+    }],
+    ".tree-view .full-menu": [{
+        "type": "separator"
+    }]
+  },
+  "menu": [{
+    "label": "Packages",
+    "submenu": [{
+      "label": "JSMidi",
+      "submenu": [{
+        "label": "Toggle JSMidi",
+        "command": "jsmidi:toggle"
+      }, {
+        "label": "Start Playback",
+        "command": "jsmidi:start"
+      }, {
+        "label": "Stop Playback",
+        "command": "jsmidi:stop"
+      }]
+    }]
+  }]
+}

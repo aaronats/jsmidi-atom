@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "name": "jsmidi-atom",
+  "description": "JSMidi Atom",
+  "license": "ISC",
+  "main": "./lib/JSMidiAtom.js",
+  "scripts": {
+    "test": "atom --test spec"
+  },
+  "keywords": [
+    "JSMidi",
+    "JSMidi Atom",
+    "Midi"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "globals": [
+      "atom"
+    ]
+  }
+}

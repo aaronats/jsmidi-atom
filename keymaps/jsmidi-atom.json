@@ -1,0 +1,6 @@
+{
+  "atom-workspace": {
+    "ctrl-j": "jsmidi:play",
+    "ctrl-l": "jsmidi:stop"
+  }
+}

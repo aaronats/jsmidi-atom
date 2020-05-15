@@ -1,0 +1,301 @@
+#jsmidi-view {
+  z-index: 1;
+}
+
+#jsmidi-active {
+  display: none;
+};
+
+#jsmidi-inactive {
+  height: 100%;
+  display: block;
+
+  img, div {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  img { margin-top: -55px; }
+
+  div {
+    text-align: center;
+    width: 90%;
+  }
+}
+
+.jsmidi-section-header {
+  padding: 4px 8px;
+  font-weight: 500;
+
+  .jsmidi-header-btn {
+    display: inline;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+  }
+
+  i {
+    text-align: center;
+    vertical-align: -2px;
+  }
+}
+
+.jsmidi-section-notice {
+  text-align: center;
+  padding: 5px 5px 8px;
+}
+
+.jsmidi-section-content {
+  padding: 4px;
+}
+
+#jsmidi-restarts {
+  padding: 0 5px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #666;
+}
+
+#jsmidi-logs {
+  height: 33%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  #jsmidi-logs-container {
+    border-radius: 3px;
+    position: absolute;
+    overflow-y: scroll;
+    bottom: 8px;
+    top: 38px;
+    right: 8px;
+    left: 8px;
+  }
+
+  .jsmidi-log {
+    font-size: 12px;
+    padding: 2px 8px;
+  }
+
+  .jsmidi-log-icon {
+    width: 14px;
+    padding: 2px 4px;
+  }
+
+  i {
+    &:before {
+      font-size: 12px;
+      height: 12px;
+      width: 12px;
+    }
+  }
+}
+
+#jsmidi-playback {
+  padding: 5px;
+
+  button {
+    height: 35px;
+    text-align: center;
+    margin: 0 2px;
+    padding: 0;
+
+    i {
+      &:before {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  button:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  #jsmidi-play.active {
+    color: white;
+    background-color: mediumseagreen;
+    background-image: none;
+  }
+}
+
+#jsmidi-timing {
+  height: 60px;
+
+  .jsmidi-timing-wrap {
+    padding: 10px;
+    width: 33.3%;
+  }
+
+  .jsmidi-timing-val {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .jsmidi-timing-label {
+    font-size: 10px;
+    font-weight: bold;
+    color: #666;
+  }
+}
+
+#jsmidi-tracks-table {
+  width: 100%;
+  margin-left: 6px;
+
+  th {
+    font-size: 10px;
+  }
+
+  td, th {
+    padding: 3px;
+    font-weight: bold;
+  }
+
+  .jsmidi-track-action {
+    text-align: center;
+    width: 25px;
+  }
+
+  .jsmidi-mute {
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.jsmidi-icon-container {
+  border: none;
+  background: inherit;
+  white-space: nowrap;
+
+  img {
+    margin-top: -1px;
+  }
+
+  &:hover {
+    background: lighten(#43484d, 5%);
+  }
+}
+
+.jsmidi-input-wrap {
+  padding: 8px;
+
+  .jsmidi-label {
+    width: 30%;
+    padding: 0 4px;
+  }
+
+  .jsmidi-select {
+    height: 24px;
+    border-radius: 3px;
+  }
+
+  .input-checkbox {
+    width: 16px;
+    height: 16px;
+  }
+
+  .input-checkbox:before,
+  .input-checkbox:after {
+    top: 12px;
+    left: 6px;
+  }
+
+  .input-checkbox:active,
+  .input-checkbox:checked,
+  .input-checkbox:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  .input-checkbox:active {
+    background-color: none;
+  }
+}
+
+.theme-atom-light-ui, .theme-one-light-ui {
+  .jsmidi-section-header {
+    background-color: #f3f4f6;
+    border-bottom: 1px solid #c5cad3;
+    border-top: 1px solid #c5cad3;
+  }
+
+  #jsmidi-tracks-table {
+    th { color: #999; }
+  }
+
+  #jsmidi-logs-container, .input-checkbox, .jsmidi-select {
+    background: #f3f4f6;
+    border: 1px solid #e3e3e3;
+  }
+
+  #jsmidi-position {
+    color: magenta;
+  }
+
+  #jsmidi-bpm {
+    color: mediumblue;
+  }
+
+  .icon-mute, .jsmidi-log-error {
+    color: crimson;
+  }
+
+  .icon-unmute, .jsmidi-log-success {
+    color: limegreen;
+  }
+
+  .jsmidi-log-warn {
+    color: yellow;
+  }
+}
+
+.theme-atom-dark-ui, .theme-one-dark-ui {
+  .jsmidi-section-header {
+    background-color: #282c34;
+    border-bottom: 1px solid #181a1f;
+    border-top: 1px solid #181a1f;
+  }
+
+  #jsmidi-tracks-table {
+    th { color: #666; }
+  }
+
+  #jsmidi-logs-container, .input-checkbox, .jsmidi-select {
+    background: #282c34;
+    border: 1px solid #181a1f;;
+  }
+
+  #jsmidi-position {
+    color: cyan;
+  }
+
+  #jsmidi-bpm {
+    color: deepskyblue;
+  }
+
+  .icon-mute, .jsmidi-log-error {
+    color: tomato;
+  }
+
+  .icon-unmute, .jsmidi-log-success {
+    color: lightgreen;
+  }
+
+  .jsmidi-log-warn {
+    color: lightyellow;
+  }
+}
+
+.flex { display: flex; }
+.flex-col { flex: auto; }
+.flex-justify { justify-content: space-between; }
+
+.bold { font-weight: bold; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+.align-left { text-align: left; }
