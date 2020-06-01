@@ -1,7 +1,11 @@
 {
-  "version": "1.0.0",
+  "version": "0.0.0",
   "name": "jsmidi-atom",
   "description": "JSMidi Atom",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aaronats/jsmidi-atom.git"
+  },
   "license": "ISC",
   "main": "./lib/JSMidiAtom.js",
   "scripts": {
@@ -10,7 +14,9 @@
   "keywords": [
     "JSMidi",
     "JSMidi Atom",
-    "Midi"
+    "Sonic Pi",
+    "Live Code",
+    "MIDI"
   ],
   "dependencies": {},
   "devDependencies": {
