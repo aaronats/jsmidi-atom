@@ -1,7 +1,4 @@
-<div style="text-align:center">
-  <img src="docs/jsmidi-logo.svg" height="80" alt="jsmidi-logo" />
-</div>
-
+<img src="docs/jsmidi-logo.svg" height="80" width="100%" align="center" alt="jsmidi-logo" />
 
 <div style="text-align:center">
   <br />
