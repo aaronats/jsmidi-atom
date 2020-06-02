@@ -1,9 +1,10 @@
 {
-  "version": "0.0.2",
+  "version": "0.0.1",
   "name": "jsmidi-atom",
   "description": "JSMidi Atom",
   "repository": {
-    "url": " https://github.com/aaronats/jsmidi-atom.git"
+    "type": "git",
+    "url": "git://github.com/aaronats/jsmidi-atom.git"
   },
   "license": "ISC",
   "main": "./lib/JSMidiAtom.js",
