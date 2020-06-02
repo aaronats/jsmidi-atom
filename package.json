@@ -3,8 +3,7 @@
   "name": "jsmidi-atom",
   "description": "JSMidi Atom",
   "repository": {
-    "type": "git",
-    "url": "git://github.com/aaronats/jsmidi-atom.git"
+    "url": " https://github.com/aaronats/jsmidi-atom.git"
   },
   "license": "ISC",
   "main": "./lib/JSMidiAtom.js",
