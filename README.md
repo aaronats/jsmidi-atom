@@ -1,6 +1,7 @@
 <img src="docs/jsmidi-logo.svg" height="80" width="100%" align="center" alt="jsmidi-logo" />
 
-<div style="text-align:center">
+<div align="center">
+  <br />
   <br />
   <p>
     JSMidi is a music production tool that works directly with your Digital Audio
