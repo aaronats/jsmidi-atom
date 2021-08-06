@@ -37,7 +37,7 @@ module.exports = (root) => {
           <div class="jsmidi-section-content">
             <div id="jsmidi-timing" class="flex">
               <div class="jsmidi-timing-wrap align-left">
-                <div id="jsmidi-position" class="jsmidi-timing-val">0:0:0</div>
+                <div id="jsmidi-position" class="jsmidi-timing-val">1:1:1</div>
                 <div class="jsmidi-timing-label">POSITION</div>
               </div>
               <div class="jsmidi-timing-wrap align-center">
